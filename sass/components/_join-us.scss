@@ -1,0 +1,77 @@
+.join-paragraph {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: $primary-white-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.86;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe-title {
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-top: 0;
+
+  color: $primary-white-color;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  padding-left: 16px;
+  margin-right: 12px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe-button {
+  display: inline-flex;
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.send-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  fill: currentColor;
+}

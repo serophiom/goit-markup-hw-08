@@ -1,0 +1,54 @@
+.hero {
+  background-color: #c4c4c4;
+  text-align: center;
+
+  h1 {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: $primary-white-color;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+.overlay {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/logo.jpg);
+  background-position: center;
+}
+
+.hero-button {
+  display: inline-block;
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  cursor: pointer;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
