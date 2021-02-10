@@ -1,0 +1,55 @@
+.dignity {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.dignity h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.dignity-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.dignity-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dignity-list .item {
+  width: 270px;
+}
+
+.dignity-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.dignity-par {
+  color: #757575;
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.icon-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+/*# sourceMappingURL=copy_dignity.css.map */

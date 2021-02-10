@@ -4,13 +4,7 @@
 }
 
 .nav-list {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  display: flex;
 
   .item:not(:last-child) {
     margin-right: 50px;

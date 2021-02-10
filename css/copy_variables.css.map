@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass copy/copy_utils/copy_variables.scss"
+    ],
+    "names": [],
+    "file": "copy_variables.css"
+}
