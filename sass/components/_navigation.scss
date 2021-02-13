@@ -1,6 +1,10 @@
 .nav {
+  @media screen and (max-width: ) {
+  }
+
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-list {
@@ -8,7 +12,10 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-right: auto;
+    // justify-content: center;
+    // align-items: center;
+    // margin-left: 88px;
+    // margin-right: auto;
     margin-left: auto;
   }
 
@@ -54,5 +61,142 @@
 
     background-color: $accent-color;
     border-radius: 2px;
+  }
+}
+
+.burger-cross {
+  display: inline-flex;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: $primary-white-color;
+
+  fill: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  .phone-menu {
+    display: none;
+  }
+
+  &.is-open .phone-menu {
+    display: block;
+  }
+
+  &.is-open .phone-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.phone-menu {
+  // display: none;
+
+  @media screen and (max-width: 767px) {
+    // display: inline-block;
+    margin-bottom: 302px;
+    padding-top: 48px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: $primary-white-color;
+
+    // &.is-open {
+    //   display: block;
+    // }
+
+    // &.is-open {
+    //   display: none;
+    // }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-link {
+  display: block;
+
+  padding-left: 40px;
+
+  color: $primary-text-color;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+
+    transition: $tansition-hover;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-adress {
+  padding-left: 40px;
+}
+
+.menu-tele {
+  display: block;
+  margin-bottom: 32px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+
+.menu-email {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $primary-paragraph-color;
+}
+
+.menu-social {
+  margin-top: auto;
+
+  display: flex;
+
+  &__item {
+    padding-right: 10px;
+    padding-left: 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $accent-color;
+  }
+
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }

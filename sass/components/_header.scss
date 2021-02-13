@@ -11,8 +11,8 @@
 
 .logo {
   //   margin-right: 93px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   color: $primary-text-color;
   text-decoration: none;
@@ -34,6 +34,15 @@
     display: block;
   }
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+
+    .item + .item {
+      margin-left: 50px;
+    }
+  }
+
   margin-left: auto;
 
   .item:not(:last-child) {
@@ -46,10 +55,6 @@
 }
 
 .mail-tele {
-  //   display: inline-flex;
-  //   justify-content: center;
-  //   align-items: center;
-
   color: $primary-paragraph-color;
   text-decoration: none;
 
@@ -61,6 +66,12 @@
     color: $accent-color;
 
     transition: $tansition-hover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
