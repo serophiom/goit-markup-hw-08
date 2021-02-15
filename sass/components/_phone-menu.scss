@@ -1,0 +1,139 @@
+.burger-cross {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: $primary-white-color;
+
+  fill: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  .burger-cross .icon-cross {
+    display: none;
+  }
+
+  .burger-cross.is-open .icon-cross {
+    display: block;
+  }
+
+  .burger-cross.is-open .icon-burger {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.phone-menu {
+  display: none;
+}
+
+.phone-menu.is-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 302px;
+    padding-top: 48px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding: 48px 83px 47px 40px;
+
+    background-color: $primary-white-color;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-link {
+  display: inline-flex;
+  color: $primary-text-color;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+
+    transition: $tansition-hover;
+  }
+}
+
+.menu-adress {
+  margin-bottom: 63px;
+}
+
+.item-menu:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-tele {
+  display: block;
+  margin-bottom: 32px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+
+.menu-email {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $primary-paragraph-color;
+}
+
+.menu-social {
+  margin-top: auto;
+
+  display: flex;
+
+  &__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $accent-color;
+  }
+
+  .item:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  .item:not(:last-child) {
+    padding-right: 10px;
+  }
+
+  .item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}

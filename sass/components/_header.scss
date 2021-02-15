@@ -10,9 +10,13 @@
 }
 
 .logo {
-  //   margin-right: 93px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 
   color: $primary-text-color;
   text-decoration: none;
@@ -37,6 +41,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
+    align-items: center;
 
     .item + .item {
       margin-left: 50px;
@@ -45,13 +50,11 @@
 
   margin-left: auto;
 
-  .item:not(:last-child) {
-    margin-bottom: 10px;
+  @media screen and (max-width: 1199px) {
+    .item:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
-
-  //   .item + .item {
-  //     margin-left: 50px;
-  //   }
 }
 
 .mail-tele {

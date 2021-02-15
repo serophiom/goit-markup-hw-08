@@ -13,34 +13,35 @@
 <body>
     <header class="header">
         <div class="conteiner header-conteiner">
-        <div class="nav-menu">
+        
             <nav class="nav">
             <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
+        <div class="nav-menu">
             <ul class="nav-list list">
                 <li class="item"><a href="./index.html" class="nav-link nav-current">Студия</a></li>
                 <li class="item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
                 <li class="item"><a href="" class="nav-link">Контакты</a></li>
             </ul>
-            
-            <button type="button" class="burger-cross" aria-label="Переключатель мобильного меню" data-menu-button>
+        </div>
+            <button type="button" class="burger-cross" aria-label="Переключатель мобильного меню" data-menu-open>
                 <svg width="40" height="40">
                     <use class="icon-burger" href="./images/symbol-defs.svg#icon-burger"></use>
                 </svg>
             </button>
 
-            <div class="phone-menu" data-menu>
-                <button type="button" class="burger-cross" aria-label="Переключатель мобильного меню" data-menu-button>
+            <div class="phone-menu" id="phone-menu" data-menu>
+                <button type="button" class="burger-cross" aria-label="Переключатель мобильного меню" data-menu-close>
                     <svg width="40" height="40">
                         <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
                     </svg>
                 </button>
                 <ul class="list">
-                    <li class="item"><a href="./index.html" class="menu-link nav-current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="menu-link">Портфолио</a></li>
-                    <li class="item"><a href="" class="menu-link">Контакты</a></li>
+                    <li class="item-menu"><a href="./index.html" class="menu-link nav-current">Студия</a></li>
+                    <li class="item-menu"><a href="./portfolio.html" class="menu-link">Портфолио</a></li>
+                    <li class="item-menu"><a href="" class="menu-link">Контакты</a></li>
                 </ul>
-
-                <ul class="menu-adress list">
+                <div>
+                 <ul class="menu-adress list">
                     <li class="item"><a href="tel:+380961111111" class="menu-tele">    
                         +38 096 111 11 11</a></li>
                     <li class="item"><a href="info@devstudio.com" class="menu-email">    
@@ -52,10 +53,12 @@
                     <li class="item"><a href="" class="menu-social__item">Twitter</a></li>
                     <li class="item"><a href="" class="menu-social__item">Facebook</a></li>
                     <li class="item"><a href="" class="menu-social__item">LinkedIn</a></li>
-                </ul>
+                </ul>   
+                </div>
+                
             </div>
         </nav>
-        </div>
+        
             
         
         <ul class="adress-list list">
@@ -88,8 +91,8 @@
                 <li class="item">
                     <div class="icon-bg">
                         <svg class="dignity-icon">
-                        <use href="./images/symbol-defs.svg#icon-antenna"></use>
-                    </svg>
+                            <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                        </svg>
                     </div>
                     <h3>Внимание к деталям</h3>
                     <p class="dignity-par">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -130,19 +133,28 @@
             <h2>Чем мы занимаемся</h2>
             <ul class="list occupation-list">
                 <li class="item">
-                    <a href="" class="occupation-link"><img src="./images/doing-1.jpg" alt="печатаем на клавиатуре" width="370"></a>
+                    <a href="" class="occupation-link">
+                        <img
+                        srcset="./images/doing-1.jpg 1x, ./images/doing-1@2x.jpg 2x"
+                        src="./images/doing-1.jpg" alt="печатаем на клавиатуре" width="370"></a>
                     <div class="occupation-overlay">
                         <p>десктопные приложения</p>
                     </div>
                 </li>
                 <li class="item">
-                    <a href=""><img src="./images/doing-2.jpg" alt="держим телефон перед ноутбуком" width="370"></a>
+                    <a href="">
+                        <img
+                        srcset="./images/doing-2.jpg 1x, ./images/doing-2@2x.jpg 2x"
+                        src="./images/doing-2.jpg" alt="держим телефон перед ноутбуком" width="370"></a>
                     <div class="occupation-overlay">
                        <p>мобильные приложения</p>
                     </div>
                 </li>
                 <li class="item">
-                    <a href=""><img src="./images/doing-3.jpg" alt="выбираем цвет на планшете" width="370"></a>
+                    <a href="">
+                        <img
+                        srcset="./images/doing-3.jpg 1x, ./images/doing-3@2x.jpg 2x"
+                        src="./images/doing-3.jpg" alt="выбираем цвет на планшете" width="370"></a>
                     <div class="occupation-overlay">
                         <p>дизайнерские решения</p>
                     </div>
@@ -156,7 +168,9 @@
             <h2>Наша команда</h2>
             <ul class="list team-list">
                 <li class="item">
-                    <a href=""><img src="./images/desiner.jpg" alt="дезайнер нашей команды" class="team-img"></a>
+                    <a href=""><img
+                        srcset="./images/desiner.jpg 1x, ./images/desiner@2x.jpg 2x"
+                        src="./images/desiner.jpg" alt="дезайнер нашей команды" class="team-img"></a>
                     <h3>Игорь Демьяненко</h3>
                     <p lang="en" class="team-par">Product Designer</p>
                     <ul class="list social-list">
@@ -191,7 +205,9 @@
                     </ul>
                 </li>
                 <li class="item">
-                    <a href=""><img src="./images/developer.jpg" alt="разработчик нашей команды" class="team-img"></a>
+                    <a href=""><img
+                        srcset="./images/developer.jpg 1x, ./images/developer@2x.jpg 2x"
+                        src="./images/developer.jpg" alt="разработчик нашей команды" class="team-img"></a>
                     <h3>Ольга Репина</h3>
                     <p lang="en" class="team-par">Frontend Developer</p>
                     <ul class="list social-list">
@@ -226,7 +242,9 @@
                     </ul>
                 </li>
                 <li class="item">
-                    <a href=""><img src="./images/marketing.jpg" alt="маркетолог нашей команды" class="team-img"></a>
+                    <a href=""><img
+                        srcset="./images/marketing.jpg 1x, ./images/marketing@2x.jpg 2x"
+                        src="./images/marketing.jpg" alt="маркетолог нашей команды" class="team-img"></a>
                     <h3>Николай Тарасов</h3>
                     <p lang="en" class="team-par">Marketing</p>
                     <ul class="list social-list">
@@ -261,7 +279,9 @@
                     </ul>
                 </li>
                 <li class="item">
-                    <a href=""><img src="./images/ui-desiner.jpg" alt="дезайнер интерфейса нашей команды"  class="team-img"></a>
+                    <a href=""><img
+                        srcset="./images/ui-desiner.jpg 1x, ./images/ui-desiner@2x.jpg 2x"
+                        src="./images/ui-desiner.jpg" alt="дезайнер интерфейса нашей команды"  class="team-img"></a>
                     <h3>Михаил Ермаков</h3>
                     <p lang="en" class="team-par">UI Designer</p>
                     <ul class="list social-list">

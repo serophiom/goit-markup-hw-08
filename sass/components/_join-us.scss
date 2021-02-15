@@ -10,6 +10,12 @@
   text-transform: uppercase;
 }
 
+.subscribe {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
 .subscribe-title {
   font-weight: 700;
   text-transform: uppercase;
@@ -28,10 +34,18 @@
   border-radius: 4px;
 
   padding-left: 16px;
-  margin-right: 12px;
 
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
+
+  @media screen and (min-width: 768px) {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 
   &:focus {
     outline: none;
@@ -49,7 +63,7 @@
   border: 0px;
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 200px;
+  min-width: 20px;
   cursor: pointer;
 
   align-items: center;

@@ -10,8 +10,22 @@
 .footer-conteiner {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+
   justify-content: space-around;
+
+  @media screen and (max-width: 479px) {
+    align-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.adress-logo {
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-logo {
